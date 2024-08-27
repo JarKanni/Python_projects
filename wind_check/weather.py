@@ -44,12 +44,12 @@ def check_weather():
     print(f"End time is: {max(end_time)}\n")
 
 
-    #checks for windspeeds over 5 mph within 'windspeed', prints warning and wind speed if detected
+    #checks for windspeeds over 10 mph within 'windspeed', prints warning and wind speed if detected
     index = 0
     counter = 0
     for wind in windspeed:
         index += 1
-        if wind != '0 mph' and wind != '5 mph':
+        if wind != '0 mph' and wind != '10 mph':
             counter += 1
             if counter == 1:
                 print(f"Look out!  {windspeed[index]} wind is coming at {start_time[index]}")
