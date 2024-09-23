@@ -24,11 +24,11 @@ def main():
     """Main window showing current stats presented to player.
 
     Prints 'window' showing current day, cash, inventory, and market prices.
-    Asks player which action to take -- (B)uy, (S)ell, or (W)ait?
+    Asks player which action to take -- (B)uy, (S)ell, or (W)atch?
     
     Returns:
     choice (string) -- stores input of player when given choice of
-                        (B)uy, (S)ell, or (W)ait?
+                        (B)uy, (S)ell, or (W)atch?
     """
     #prints main window of stats
     print(   '╔══════════════════════════╗\n'
@@ -53,7 +53,7 @@ def main():
         print(i, ' : ', inventory[i])
 
     #asks player to choose action
-    choice = input('\n(B)uy, (S)ell, or (W)ait? ').lower()
+    choice = input('\n(B)uy, (S)ell, or (W)atch? ').lower()
 
     #based on player choice, runs relevent function
     match choice:
@@ -61,11 +61,11 @@ def main():
             buy()
         case 's': #sell
             sell()
-        case 'w': #wait
-            wait()
+        case 'w': #watch
+            watch()
         case _: #empty
             print('...nothing?  Really?')
-            wait()
+            watch()
 
     return choice
 
@@ -126,7 +126,7 @@ def sell():
             main()
 
 
-def wait():
+def watch():
     """Advances Day and updates market prices."""
     global market
     global day
@@ -147,7 +147,7 @@ def wait():
     days += 1
     if day == 5:
         day = 0
-    print('Waiting...')
+    print('Watching...')
     main()
 
 
