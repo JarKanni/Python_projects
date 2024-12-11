@@ -2,9 +2,11 @@
 Projects utilizing Python and associated libraries
 
 ---
+### [NFL Kicking Analysis](https://github.com/JarKanni/nfl/blob/main/kicking_analysis/nfl_kicking.ipynb)
+- Pandas and Matplotlib data analysis to discover if NFL Kickers are getting more or less accurate over the years
 
 ### [Bikeshare](https://github.com/JarKanni/Python/tree/main/bikeshare)
-- Python and Pandas data analysis on US bike rideshare data
+- Python functions and Pandas data analysis on US bike rideshare data
 
 ### [Commodity Trader Game](https://github.com/JarKanni/Python/tree/main/commodity_trader_game)
 - Simple Python commodity trading game
